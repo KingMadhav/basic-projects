@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+}
+
+.nav {
+    margin: 20px 60px;
+    display: flex;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 100px;
+    letter-spacing: -8px;
+    line-height: 100px;
+    font-weight: 100;
+}
+
+.case {
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 200px;
+    background-color: black;
+    height: 2px;
+}
+
+.bottom i {
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+.bottom i:hover{
+    background-color: black;
+    color: white
+}
+.imglk1, .lk1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+    align-items: center;
+}
+
+.bottom {
+    padding-top: 5%;
+    display: flex;  
+    justify-content: space-between;
+    gap: 170px;
+}
+.btmleft, .btmright {
+    width: 100%; 
+}
+.images {
+    padding: 5%;
+    border-radius: 25px;
+    width: 1 vw;
+    height: 100%;
+    align-items: center;
+    gap: 30%;
+    padding-bottom: 0px;
+    display: flex;
+}
+.images img {
+    max-width: 100%; 
+    border-radius: 25px;
+}
+.imgbtm1, .imgbtm2{
+    display: none;
+}
+        
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+    
+    .nav ul {
+        gap: 10px;
+    }
+    
+    .bottom {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+        h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 3rem;
+    }
+
+    .line{
+        width: 100px;
+    }
+
+    .nav {
+        font-size: 1rem;
+    }
+    
+    .bottom, .lk1 {
+    gap: 10px;
+    display: none;
+    flex-direction: column;
+    }
+    .images img {
+        border-radius: 5px;
+    }
+    .images {
+        flex-direction: column;
+    }
+    .imgbtm1, .imgbtm2{
+        display: block;
+    }
+} 

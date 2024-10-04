@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendline</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="mainnav">
+        <div class="nav1">
+            <nav class="gola">
+                <div class="gola1"></div>
+                <div class="gola2"></div>
+            </nav>
+            <div class="nav1right">
+                <h4>EN <span class="ru">RU</span></h4>
+                <h4>Country : Russia</h4>
+                <h4>Profile</h4>
+                <h4>Wishlist [0]</h4>
+                <h4>Search</h4>
+                <h5><i class="ri-menu-line"></i></h5>
+            </div>
+        </div><br>
+        <div class="nav2">
+            <h3>SUN</h3>
+            <h3>OPTICAL</h3>
+            <h3>COLLECTIONS</h3>
+            <h3>STUDIO</h3>
+            <h3>ABOUT</h3>
+            <h3>SHOP</h3>
+            <h3>JOURNAL</h3>
+        </div>
+    </div>
+    <div id="content">
+        <div class="scrollableContent">
+            <div class="textcontent">
+                <div class="elem">
+                    <h1>Johny walker</h1>
+                </div>
+                <div class="elem">
+                    <h1>Trendline</h1>
+                </div>
+                <div class="elem">
+                    <h1>Blenders</h1>
+                </div>
+            </div>
+            <div class="imgcontent">
+                <div class="pic">
+                    <img src="1-landscape-lifestyle-image-1130px-by-440px.webp" alt="">
+                </div>
+                <div class="pic">
+                    <img src="axle-adamos-N32nJZt07DI-unsplash.Eye-Mechanix-640x350-1.webp" alt="">
+                </div>
+                <div class="pic">
+                    <img src="cheerful-asian-man-woman-taking-260nw-1660013923.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const textContent = document.querySelector('.textcontent');
+        const imageContent = document.querySelector('.imgcontent');
+        textContent.addEventListener('scroll', function () {
+            imageContent.scrollLeft = textContent.scrollLeft;
+        });
+        imageContent.addEventListener('scroll', function () {
+            textContent.scrollLeft = imageContent.scrollLeft;
+        });
+    </script>
+</body>
+
+</html>

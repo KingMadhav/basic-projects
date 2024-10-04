@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1,.page2,.page3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page1{
+    background-color: darkgray;
+}
+.page2{
+    background-color: darkolivegreen;
+}
+.page3{
+    background-color: darkcyan;
+}
+ img{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+}

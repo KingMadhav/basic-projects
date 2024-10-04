@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+HTML,
+BODY {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: pink;
+}
+
+#main {
+    background-color: snow;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navpart-1 {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 5000;
+    justify-items: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+#button2 {
+    border: none;
+    color: white;
+    background-color: orangered;
+}
+
+#main>h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img {
+    height: 220px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#img1 {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#img2 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+#img3 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+#img4 {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+h5 {
+    text-transform: capitalize;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+h4 {
+    text-transform: capitalize;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    font-size: 15px;
+}
+
+.last {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    font-weight: 500;
+}

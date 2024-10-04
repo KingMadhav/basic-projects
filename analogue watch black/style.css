@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: black;
+}
+
+.outercircle,
+.innercircle,
+.point {
+    height: 40vh;
+    width: 40vh;
+    position: relative;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outercircle {
+    border: 8px solid whitesmoke;
+}
+.innercircle{
+    height: 35vh;
+    width: 35vh;
+    background: radial-gradient(rgb(34, 33, 33),rgb(0, 0, 0));
+}
+
+.point {
+    height: 8px;
+    width: 8px;
+    background-color: antiquewhite;
+}
+
+
+.hour_hand {
+    height: 3px;
+    width: 30%;
+    background-color: blue;
+}
+
+.minute_hand {
+    height: 2px;
+    width: 35%;
+    background-color: yellow;
+}
+
+.second_hand {
+    height: 1.5px;
+    width: 40%;
+    background-color: red;
+}
+
+.hour_hand,
+.minute_hand,
+.second_hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: left;
+}
+
+
+.number {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 2px;
+    width: 2px;
+    background-color: antiquewhite;
+    transform: translate(-50%, -50%);
+}
+
+.number1 {
+    top: 13%;
+    left: 72%;
+}
+
+.number2 {
+    top: 30%;
+    left: 88%;
+}
+
+.number3 {
+    top: 50.8%;
+    left: 95%;
+}
+
+.number4 {
+    top: 73%;
+    left: 88%;
+}
+
+.number5 {
+    top: 90%;
+    left: 72%;
+}
+
+.number6 {
+    top: 95%;
+    left: 50%;
+}
+
+.number7 {
+    top: 90%;
+    left: 28%;
+}
+
+.number8 {
+    top: 73%;
+    left: 12%;
+}
+
+.number9 {
+    top: 51%;
+    left: 5%;
+}
+
+.number10 {
+    top: 29.5%;
+    left: 12%;
+}
+
+.number11 {
+    top: 14%;
+    left: 28%;
+}
+
+.number12 {
+    top: 8%;
+    left: 50%;
+}

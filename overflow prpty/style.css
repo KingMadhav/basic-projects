@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'anurati';
+    src: url(/.Anurati-Regular.otf)
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://imgs.search.brave.com/gXQWyq4_Mmi_Th9x_mnzxbv7sp9y1600xSoojF87MJc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODU1/MDIyNzI4L3Bob3Rv/L3ZpZXctb2YtdGhl/LXBsYXRlYXUtc29u/aS1rb3VnZW4taW4t/amFwYW4uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPXVBaEU0/YzdCNTJEUGkycjFG/bVB0ZnJjVjB3WnZh/UWpnOGYxQjVBc0hK/WHc9);
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(33, 29, 29, 0.441);
+}
+
+h1 {
+    font-family: anurati;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+}
+
+
+.line {
+    width: 30%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-family: anurati;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    padding: 5px;
+    color: wheat;
+    background-color: black;
+    text-transform: uppercase;
+}
+
