@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whether App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/clear.png" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-indigo-500 via-purple-500 h-fit">
+    <div
+      class="card mx-auto p-8 mt-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 w-[80vh] h-[80vh]"
+    >
+      <div class="search flex h-12 justify-around">
+        <input
+          type="text"
+          placeholder="Enter City name (eg.Aligarh)"
+          spellcheck="false"
+          class="rounded-full px-8 w-[70%]"
+        />
+        <button><img src="./img/search.png" alt="" /></button>
+      </div>
+      <div class="main flex flex-col text-4xl font-bold text-center opacity-0">
+        <img src="./img/clouds.png" alt="" class="weather-icon mx-auto" />
+        <div class="temp">-</div>
+        <div class="cityName">-</div>
+      </div>
+      <div class="error opacity-0 absolute">
+        <h1 class="text-8xl font-semibold text-center">
+          Invalid city
+        </h1>
+      </div>
+      <div class="WindAndHumidity flex mt-8 gap-12 opacity-0">
+        <div class="humidity flex gap-4">
+          <img src="./img/humidity.png" alt="humidity" class="weather-icon mx-auto" />
+          <div class="humidtext flex flex-col">
+            <h1 class="humidpercent text-3xl font-semibold">94%</h1>
+            <h2 class="text-2xl font-semibold">humidity</h2>
+          </div>
+        </div>
+        <div class="windinfo flex gap-4">
+          <img src="./img/wind.png" alt="" />
+          <div class="wind flex flex-col">
+            <h1 class="windspeed text-3xl font-semibold">1.54 Km/hr</h1>
+            <h2 class="text-2xl font-semibold">Wind speed</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
